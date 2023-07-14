@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Memory Game!</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Memory Game!</h1>
+    <div id="start-screen" class="screen" style="display: block">
+      <button onclick="startGame()">Start Game</button>
+    </div>
+    <div id="game" style="display: none">
+    </div>
+    
+    <div id="score-div" class="score" style="display: none">Current Score: 
+      <div id="current-score">0</div>
+    </div>
+    <div class="score">Best Score:
+      <div id="high-score">0</div>
+    </div>
+    <div id="restart-button" style="display: none">
+      <button onclick="restart()">Restart</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
