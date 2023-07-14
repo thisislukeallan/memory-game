@@ -128,7 +128,7 @@ function handleCardClick(event) {
     if (matches == (COLORS.length / 2)) {
       // saving highScore to localStorage / updating
         if (attempts < highScore || highScore === 0) {
-          console.log("set highscore");
+          // console.log("set highscore");
           localStorage.setItem("highScore", attempts);
           highScoreCounter.innerHTML = JSON.parse(localStorage.getItem("highScore"));
         }
@@ -136,7 +136,7 @@ function handleCardClick(event) {
           return;
         }
     }
-  }, 1100);
+  }, 1000);
 }
 
 function startGame() {
